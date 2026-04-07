@@ -1,0 +1,4 @@
+id,name,frequency,target_goal,category,start_date,active
+b654ade9,running,daily,5,health,2028-8-27,True
+5e06440f,sport,daily,2,fitness,2026-04-06,True
+b1ce8590,run,daily,3,fitness,2021-3-20,True
