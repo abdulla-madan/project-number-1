@@ -13,8 +13,17 @@ def add_plant():
     except :
         with open('plants.csv', 'w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(['id', 'plant name/species', 'Location in home', 'date acquired', 'Watering frequency', 'Sunlight needs'])
+            writer.writerow([ 'plant name/species', 'Location in home', 'date acquired', 'Watering frequency', 'Sunlight needs'])
             print('\n\nnew plants.csv created')
+    print("\n=== Add a New plant ===")
+    plant_name_species = input("Enter plant name: ")
+    
+    while True:
+        print("Please enter the location of the plant in home.")
+        location_in_home = input("Enter : ").lower()
+        break
+
+    
 
 
 
@@ -36,6 +45,7 @@ def add_plant():
 
 
 
+ log_plant_care()
 
 
 
@@ -62,12 +72,12 @@ def add_plant():
 
 def display_menu():
     """Display the main menu options."""
-    print("\n=== Habit Tracker ===")
-    print("1. Add a new habit to track")
-    print("2. Log completion of a habit")
-    print("3. View habit streaks and statistics")
-    print("4. Edit or remove habits")
-    print("5. View all plant")
+    print("\n=== plant Tracker ===")
+    print("1. Add a new plant to track")
+    print("2.Record a plant care activity ")
+    print("3.View plants due for care ")
+    print("4.Search plants by name or location")
+    print("5.View all plants")
     return input("Enter your choice (1-5): ")
 
 
